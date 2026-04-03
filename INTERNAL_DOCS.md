@@ -1,7 +1,6 @@
 # 📖 Manual de Sobrevivência e Contribuição
 
 > **⚠️ AVISO: DOCUMENTAÇÃO DE USO ESTRITAMENTE INTERNO**
->
 > Este documento foi desenhado exclusivamente para o alinhamento da nossa equipe.
 O foco aqui é didática extrema, nivelamento técnico e padronização absoluta.
 Ele foi estruturado deliberadamente dessa forma para guiar nossos passos de forma segura e à prova de falhas,
@@ -17,7 +16,7 @@ Antes de escrever sua primeira linha de código, você precisa preparar o terren
 
 Clone o repositório e instale as munições do projeto. No seu terminal, rode:
 ```bash
-npm install # ou somente npm i
+npm install
 ```
 Isso vai baixar todas as bibliotecas necessárias para a aplicação rodar. Se der erro aqui, **não avance**.
 
