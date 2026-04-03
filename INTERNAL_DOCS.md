@@ -342,4 +342,4 @@ O botão de **"Merge pull request"** só deve ser apertado quando:
 2. O Code Review estiver **Aprovado**.
 3. Não houver conflitos com a `main`.
 
-Após o merge, clique no botão para **deleter a sua branch** no GitHub para manter o repositório limpo.
+Após o merge, clique no botão para **deletar a sua branch** no GitHub para manter o repositório limpo.
