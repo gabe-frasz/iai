@@ -40,6 +40,14 @@ evitando a necessidade de usar outros chats ou ferramentas externas.
 1. Abra o VS Code e [siga essas instruções](https://code.visualstudio.com/docs/copilot/setup) para iniciar o Copilot.
 2. Aprenda [como usar o Copilot](https://code.visualstudio.com/docs/copilot/getting-started).
 
+### 1.4. Padronização de Estilo (Prettier)
+
+Nós temos um padrão visual rígido para o código (aspas duplas, ponto e vírgula e indentação de 2 espaços).
+
+- **Automático:** Ao salvar um arquivo no VS Code, a extensão do Prettier deve formatar tudo sozinho. Se não formatar, verifique se a extensão está ativa.
+
+- **Manual:** Antes de fazer o seu `git push`, rode o comando `npm run format` no terminal. Isso vai garantir que todos os arquivos da pasta `src` estejam padronizados. Código fora do padrão visual será barrado no Pull Request.
+
 ## 2. Fluxo de Trabalho (O Quadro Kanban)
 
 Para que o nosso grupo não vire uma bagunça de "quem está fazendo o quê", usaremos o [GitHub Projects](https://github.com/users/manuezi/projects/1).
