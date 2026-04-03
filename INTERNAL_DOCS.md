@@ -141,20 +141,20 @@ Commits pequenos e focados salvam vidas na hora de encontrar onde um bug começo
 ```bash
 components/
 ├── common/
-│   ├── Button.js
+│   ├── Button.jsx
 │   ├── Button.module.css
-│   ├── Input.js
+│   ├── Input.jsx
 │   ├── Input.module.css
 │   └── ...
 ├── layout/
-│   ├── Footer.js
+│   ├── Footer.jsx
 │   ├── Footer.module.css
-│   ├── Header.js
+│   ├── Header.jsx
 │   ├── Header.module.css
 │   └── ...
 pages/
-├── Home.js
-├── NotFound.js
+├── Home.jsx
+├── NotFound.jsx
 └── ...
 ```
 
