@@ -1,6 +1,7 @@
 # 📖 Manual de Sobrevivência e Contribuição
 
 > **⚠️ AVISO: DOCUMENTAÇÃO DE USO ESTRITAMENTE INTERNO**
+> 
 > Este documento foi desenhado exclusivamente para o alinhamento da nossa equipe.
 O foco aqui é didática extrema, nivelamento técnico e padronização absoluta.
 Ele foi estruturado deliberadamente dessa forma para guiar nossos passos de forma segura e à prova de falhas,
@@ -16,7 +17,7 @@ Antes de escrever sua primeira linha de código, você precisa preparar o terren
 
 Clone o repositório e instale as munições do projeto. No seu terminal, rode:
 ```bash
-npm install
+npm install # ou somente npm i
 ```
 Isso vai baixar todas as bibliotecas necessárias para a aplicação rodar. Se der erro aqui, **não avance**.
 
@@ -61,7 +62,7 @@ Alguns fluxos podem ser atualizados de forma automática, como quando uma pull r
 2. **To Do (A Fazer):** São as tarefas selecionadas para a nossa Sprint atual. Se você terminou uma tarefa, venha aqui e pegue a mais urgente que estiver atribuída a você.
 3. **Doing (Em Andamento):** Você move a task para cá assim que começar a codar.
   - *Regra de Ouro:* No máximo *1 task* por pessoa aqui. Se você está fazendo duas coisas ao mesmo tempo, não está fazendo nenhuma direito.
-4. **Review (Sob Inspeção):** Terminou o código? Abriu o Pull Request? Mova a task para cá. É aqui que eu (seu líder/sargento) vou olhar seu código, pedir ajustes ou dar o sinal verde.
+4. **Review (Sob Inspeção):** Terminou o código? Abriu o Pull Request? Mova a task para cá. É aqui que seu código será analisado antes de chegar na main.
 5. **Done (Missão Cumprida):** A tarefa só chega aqui depois que o código foi mesclado (merge) na main e está funcionando perfeitamente.
 
 ### 2.3. Checklists
@@ -106,7 +107,7 @@ Você precisa dizer **o que** fez só de bater o olho no histórico.
 
 Nós usamos o padrão **Conventional Commits**. Cada commit deve ter um "Tipo" antes da mensagem.
 
-**Os 5 Tipos Oficiais que vamos usar:**
+**Os 6 Tipos Oficiais que vamos usar:**
 1. **`feat:` (Feature / Funcionalidade):** Você adicionou algo novo no projeto.
    * *Exemplo:* `feat: adiciona componente de input no login`
 2. **`fix:` (Conserto de Bug):** Você arrumou algo que estava quebrado.
@@ -115,7 +116,9 @@ Nós usamos o padrão **Conventional Commits**. Cada commit deve ter um "Tipo" a
    * *Exemplo:* `refactor: simplifica a logica do loop`
 4. **`style:` (Formatação de Código):** Cuidado, isso **não é para CSS**. Isso é para quando você rodou o Prettier, arrumou espaços, pontos e vírgulas, ou indentação. Código que não muda a lógica.
    * *Exemplo:* `style: formata arquivo de rotas com prettier`
-5. **`chore:` (Tarefas de *Manu*tenção):** Mudanças em configurações, atualização de pacotes (npm), mexer no README ou no `.gitignore`. Trabalhos "braçais" que não afetam o código do jogo em si, ou seja, tudo que não se encaixar nos outros tipos.
+5. **`docs:` (Atualização de Documentação):** Mudou algo no README ou algum arquivo que sirva como base de conhecimento sobre o projeto? Entra aqui. Qualquer outra coisa está fora.
+   * *Exemplo:* `docs: adiciona guia de instalação da aplicação no README`
+6. **`chore:` (Tarefas de *Manu*tenção):** Mudanças em configurações, atualização de pacotes (npm), mexer no `.gitignore`. Trabalhos "braçais" que não afetam o código do jogo em si, ou seja, tudo que não se encaixar nos outros tipos.
    * *Exemplo:* `chore: atualiza a dependencia do react-router`
 
 **Importante:** O corpo da mensagem do commit deve começar com um verbo no presente do indicativo.
@@ -123,7 +126,7 @@ Exemplo: `"feat: adiciona validação de email"`, não `"feat: adicionei valida�
 Pense como se fosse dizer a seguinte frase: "Esse commit **adiciona validação de email**".
 Esse é a frase que deverá ir no seu commit.
 
-**Importante 2:** Pode colocar emojis no commit :smile:
+**Importante 2:** Sinta-se livre para colocar emojis no commit ✨.
 
 **Quando fazer o commit?**
 Não espere o fim do dia para dar um commit gigante com 50 arquivos.
@@ -138,20 +141,20 @@ Commits pequenos e focados salvam vidas na hora de encontrar onde um bug começo
 ```bash
 components/
 ├── common/
-│   ├── Button.js
+│   ├── Button.jsx
 │   ├── Button.module.css
-│   ├── Input.js
+│   ├── Input.jsx
 │   ├── Input.module.css
 │   └── ...
 ├── layout/
-│   ├── Footer.js
+│   ├── Footer.jsx
 │   ├── Footer.module.css
-│   ├── Header.js
+│   ├── Header.jsx
 │   ├── Header.module.css
 │   └── ...
 pages/
-├── Home.js
-├── NotFound.js
+├── Home.jsx
+├── NotFound.jsx
 └── ...
 ```
 
